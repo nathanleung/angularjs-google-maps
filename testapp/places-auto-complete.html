@@ -32,7 +32,7 @@ angular.module('myApp', ['ngMap']).controller('MyCtrl', function(NgMap) {
   <input places-auto-complete size=80
     ng-model="vm.address"
     component-restrictions="{country:'us'}"
-    types="{{types}}"
+    types="{{vm.types}}"
     on-place-changed="vm.placeChanged()" /> <br/>
   <div ng-show="vm.place">
     Address = {{vm.place.formatted_address}} <br/>
